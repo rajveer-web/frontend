@@ -1,0 +1,147 @@
+body {
+  font-family: "Inv Maison Neue","Maison Neue",-apple-system,BlinkMacSystemFont,"Open Sans",open-sans,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  background-color: white; /* Set background color to white */
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  max-width: 350px; 
+  max-height: 350px; 
+  margin-right: 250px;
+  
+}
+
+#productDetails {
+  color: #888888; /* Set description text color to grey */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-details {
+  max-width: 30%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.size-btn {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  background-color: #fff; /* Set background color to white */
+  color: #000; /* Set text color to black */
+  border: 3px solid #000; /* Set border color to black */
+  cursor: pointer;
+}
+
+.required-star {
+  color: #C90000; 
+}
+
+.dropdown-text {
+  cursor: pointer;
+  color: #2f2f2f; /* Blue color for the text */
+  text-align: right;
+  margin-right:200px;
+  font-size: small;
+  margin-top: 6px;
+}
+
+.dropdown-box {
+  display: none; /* Hide the drop-down box by default */
+  position: absolute;
+  top: 40px;
+  background-color: #FFFFFF; /* White background color */
+  border: 1px solid #CCCCCC; /* Grey border */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-box li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Add styles for the selected item */
+.dropdown-box li:hover {
+  background-color: #F6F6F6; /* Light grey background color on hover */
+}
+
+.cart {
+  margin-top: 5px;
+  padding: 10px;
+  width: 1450px; 
+  height: 25px;
+  background-color: #F6F6F7;
+
+}
+
+.cart-wrapper {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  padding: 10px;
+  border: 0px solid #CCCCCC; /* Grey border */
+  border-radius: 5px;
+  z-index: 1; /* To place the cart above other elements */
+  
+}
+
+.cart-items {
+  display: none; /* Hide the cart items by default */
+  padding: 10px;
+  background-color: #F6F6F7;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.cart-item img {
+  width: 30px; /* Adjust the image size as needed */
+  height: 30px; /* Adjust the image size as needed */
+  margin-right: 10px;
+}
+
+/* Add styles for the selected item */
+.cart-item:hover {
+  background-color: #F6F6F6; /* Light grey background color on hover */
+}

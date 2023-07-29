@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Online Shopping Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="cart-wrapper">
+        <p class="dropdown-text" onclick="toggleCart()">My Cart</p>
+        <div class="cart-items" id="cartItems">
+          <!-- Cart items will be displayed here dynamically -->
+        </div>
+      </div>
+    </div>
+</div><br>
+<p></p>
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="image-container">
+      <img src="" alt="Product Image" id="productImage" class="img-fluid">
+    </div>
+    <div class="product-details">
+      <h2 id="productName">Product Name</h2>
+      <p id="productPrice">Price: $XX.XX</p>
+      <p id="productDetails"></p>
+      <p id="productDetails"> Size:<span class="required-star">*</span></p> <!-- New paragraph with * in red color -->
+      <div class="size-options">
+        <button class="size-btn" onclick="selectSize('S')">S</button>
+        <button class="size-btn" onclick="selectSize('M')">M</button>
+        <button class="size-btn" onclick="selectSize('L')">L</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+      <p class="error-message" id="errorMessage"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
