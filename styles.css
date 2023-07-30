@@ -1,0 +1,183 @@
+body {
+  font-family: "Inv Maison Neue","Maison Neue",-apple-system,BlinkMacSystemFont,"Open Sans",open-sans,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  background-color: white; /* Set background color to white */
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  max-width: 350px; 
+  max-height: 350px; 
+  margin-right: 250px;
+  
+}
+
+#productDetails {
+  color: #888888; /* Set description text color to grey */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-details {
+  max-width: 30%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #CCCCCC;
+}
+
+.size-btn {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  color: #CCCCCC;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  background-color: #fff; /* Set background color to white */
+  color: #000; /* Set text color to black */
+  border: 3px solid #000; /* Set border color to black */
+  cursor: pointer;
+}
+
+.required-star {
+  color: #C90000; 
+}
+
+.dropdown-text {
+  cursor: pointer;
+  color: #2f2f2f; /* Blue color for the text */
+  text-align: right;
+  margin-right:200px;
+  font-size: small;
+  margin-top: 6px;
+}
+
+
+.cart {
+  margin-top: 5px;
+  padding: 10px;
+  width: 1450px; 
+  height: 20px;
+  background-color: #F6F6F7;
+
+}
+
+.cart-wrapper {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  padding: 10px;
+  border: 0px solid #CCCCCC; /* Grey border */
+  border-radius: 5px;
+  z-index: 1; /* To place the cart above other elements */
+  
+}
+
+.cart-items {
+  display: none; /* Hide the cart items by default */
+  padding: 10px;
+  background-color: #F6F6F7;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.cart-item img {
+  width: 30px; /* Adjust the image size as needed */
+  height: 30px; /* Adjust the image size as needed */
+  margin-right: 10px;
+}
+
+/* Add styles for the selected item */
+.cart-item:hover {
+  background-color: #F6F6F6; /* Light grey background color on hover */
+}
+
+
+/* Style for mini cart items */
+.mini-cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-right: 100px;
+}
+
+.mini-cart-item-image {
+  width: 90px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+
+.mini-cart-item-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.mini-cart-item-details p {
+  margin: 0;
+  font-size: small;
+  font-weight: bold;
+}
+
+.mini-cart-item-details p:first-child {
+  font-size: small;
+
+}
+
+.mini-cart-item-details p:last-child {
+  color: #888;
+}
+
+.mini-cart-item p:last-child {
+  margin-left: auto;
+}
+
+/* Style for the mini cart container */
+#miniCart {
+  max-width: 300px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffff;
+  position: absolute;
+  top: 30px;
+  right: 230px;
+  z-index: 2;
+  display: none
+}
+
+

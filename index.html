@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Online Shopping Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="cart">
+      <div class="cart-wrapper">
+        <p class="dropdown-text cart-count" id="cartCount" onclick="toggleCart()">My Cart (0)</p>
+        
+        <div class="cart-items" id="cartItems">
+          <!-- Cart items will be displayed here dynamically -->
+        </div>
+       
+      </div>
+    </div>
+  </div>
+<br>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="image-container">
+      <img src="" alt="Product Image" id="productImage" class="img-fluid">
+    </div>
+    <div class="product-details">
+      <h2 id="productName">Product Name</h2>
+      <p id="productPrice"> $XX.XX</p>
+      <p id="productDetails"></p>
+      <p id="productSize">Size:<span class="required-star">*</span></p>
+      <div class="size-options" id="sizeOptions">
+        <!-- Size options will be displayed here dynamically -->
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+      <p class="error-message" id="errorMessage"></p>
+    </div>
+  </div>
+
+  <div class="mini-cart" id="miniCart"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
