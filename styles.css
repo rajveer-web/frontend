@@ -1,3 +1,4 @@
+/* General styles */
 body {
   font-family: "Inv Maison Neue","Maison Neue",-apple-system,BlinkMacSystemFont,"Open Sans",open-sans,sans-serif;
   margin: 0;
@@ -8,8 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  background-color: white; /* Set background color to white */
+  background-color: white;
 }
 
 .center-content {
@@ -19,14 +19,59 @@ body {
 }
 
 .image-container {
-  max-width: 350px; 
-  max-height: 350px; 
-  margin-right: 250px;
-  
+  max-width: 350px;
+  max-height: 350px;
+
+}
+
+/* Mobile styles for image container */
+@media screen and (max-width: 768px) {
+  .image-container {
+    max-width: 350px; /* Set the desired medium size for the image */
+    max-height: 350px; /* Set the desired medium size for the image */
+    margin-right: 0;
+    margin-bottom: 210px;
+    order: 1;
+    align-items: left;
+  }
+  .product-details {
+    max-width: 100%; /* Set the maximum width for the text container */
+    order: 2; /* Change the order to 1 to move the text before the image */
+    text-align: left; /* Align the text to the left side */
+    margin-right: 221px;
+  }
+
+  .size-options {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .add-to-cart-btn {
+    max-width: 100%;
+  }
+  .mobile-layout {
+    flex-direction: column; /* Set to column layout on mobile */
+    align-items: center; /* Center elements vertically */
+    text-align: center; /* Center text elements horizontally */
+  }
+
+  /* Show the icon on mobile */
+  .cart-icon.desktop-icon {
+    display: inline;
+    margin-right: 5px; /* Add spacing between icon and text */
+  }
+  .desktop-text {
+    display: inline;
+    margin-right: 5px; /* Add spacing between icon and text */
+  }
+
+  /* Hide the icon on desktop */
+  .cart-icon {
+    display: none;
+  }
 }
 
 #productDetails {
-  color: #888888; /* Set description text color to grey */
+  color: #888888;
 }
 
 img {
@@ -36,16 +81,19 @@ img {
 
 .product-details {
   max-width: 30%;
+  margin-left: 130px;
 }
+
 #productPrice {
-  border-top: 1px solid #faf9f9; /* Add a top border line */
-  border-bottom: 1px solid #faf9f9; /* Add a bottom border line */
-  padding: 8px 0; /* Add some padding on top and bottom to separate the content from the borders */
+  border-top: 1px solid #faf9f9;
+  border-bottom: 1px solid #faf9f9;
+  padding: 8px 0;
+  margin-right: 10px;
 }
+
 #productPrice b {
   font-weight: bold;
-  color: #FF0000; /* Change the color to red */
-  /* Add any other desired styles */
+  color: #FF0000;
 }
 
 h2 {
@@ -60,7 +108,7 @@ h2 {
 }
 
 .size-btn {
-  padding: 5px 10px;
+  padding: 5px 19px;
   border: 1px solid #ddd;
   background-color: #fff;
   cursor: pointer;
@@ -69,16 +117,16 @@ h2 {
 
 .add-to-cart-btn {
   padding: 10px 20px;
-  background-color: #fff; /* Set background color to white */
-  color: #000; /* Set text color to black */
-  border: 3px solid #000; /* Set border color to black */
+  background-color: #fff;
+  color: #000;
+  border: 3px solid #000;
   cursor: pointer;
-  transition: background-color 0.2s ease; /* Add the transition property */
+  transition: background-color 0.2s ease;
 }
 
 .add-to-cart-btn:hover {
-  background-color: #000; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  background-color: #000;
+  color: #fff;
 }
 
 .required-star {
@@ -96,24 +144,21 @@ h2 {
   color: #000; /* Set the default color to black */
 }
 
-
 .dropdown-text {
   cursor: pointer;
   color: #2f2f2f; /* Blue color for the text */
   text-align: right;
-  margin-right:200px;
+  margin-right: 200px;
   font-size: small;
   margin-top: 6px;
 }
 
-
 .cart {
   margin-top: 5px;
   padding: 10px;
-  width: 1450px; 
+  width: 1450px;
   height: 20px;
   background-color: #F6F6F7;
-
 }
 
 .cart-wrapper {
@@ -124,7 +169,6 @@ h2 {
   border: 0px solid #CCCCCC; /* Grey border */
   border-radius: 5px;
   z-index: 1; /* To place the cart above other elements */
-  
 }
 
 .cart-items {
@@ -151,7 +195,6 @@ h2 {
   background-color: #F6F6F6; /* Light grey background color on hover */
 }
 
-
 /* Style for mini cart items */
 .mini-cart-item {
   display: flex;
@@ -168,16 +211,13 @@ h2 {
   margin-right: 5px;
 }
 
-
 .mini-cart-item-details {
   flex-grow: 1;
   margin-right: 10px;
   margin-bottom: 0px;
-
 }
 
 .mini-cart-item-details p {
- 
   font-size: small;
   font-weight: bold;
   margin-bottom: 10px;
@@ -211,7 +251,5 @@ h2 {
   top: 30px;
   right: 230px;
   z-index: 2;
-  display: none
+  display: none;
 }
-
-

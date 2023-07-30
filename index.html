@@ -11,7 +11,7 @@
   <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="cart">
       <div class="cart-wrapper">
-        <p class="dropdown-text cart-count" id="cartCount" onclick="toggleCart()">My Cart (0)</p>
+        <p class="dropdown-text cart-count" id="cartCount" onclick="toggleCart()"> <span class="cart-icon desktop-icon">&#128722;</span>My Cart (0)</p>
         
         <div class="cart-items" id="cartItems">
           <!-- Cart items will be displayed here dynamically -->
@@ -20,8 +20,8 @@
       </div>
     </div>
   </div>
-<br>
-  <div class="container d-flex justify-content-center align-items-center vh-100">
+  <br>
+  <div class="container d-flex justify-content-center align-items-center vh-100 mobile-layout">
     <div class="image-container">
       <img src="" alt="Product Image" id="productImage" class="img-fluid">
     </div>
@@ -30,7 +30,7 @@
       <p id="productPrice"><b></b> $XX.XX</p>
       <p id="productDetails"></p>
   
-<p id="productSize">Size:<span class="required-star">*</span><span id="selectedSizeLabel"></span></p>
+      <p id="productSize">Size:<span class="required-star">*</span><span id="selectedSizeLabel"></span></p>
 
       <div class="size-options" id="sizeOptions">
         <!-- Size options will be displayed here dynamically -->
