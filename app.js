@@ -34,7 +34,6 @@ function fetchProductDetails() {
     });
 }
 
-// Function to handle the selection of a size option
 function selectSize(size) {
   // Remove the "selected" class from all size buttons
   const sizeButtons = document.querySelectorAll('.size-btn');
@@ -43,6 +42,11 @@ function selectSize(size) {
   // Add the "selected" class to the clicked size button
   const selectedSizeButton = document.querySelector(`button[data-size="${size}"]`);
   selectedSizeButton.classList.add('selected');
+
+  // Update the selected size label in the product details section
+  const selectedSizeLabel = document.getElementById('selectedSizeLabel');
+  selectedSizeLabel.innerText = size;
+  selectedSizeLabel.style.color = '#000'; // Set the color to black when a size is selected
 }
 
 // Function to add a product to the cart
@@ -120,7 +124,7 @@ function updateMiniCart() {
       itemQuantity.innerText = 'x' + item.quantity;
   
       const itemPrice = document.createElement('p');
-      itemPrice.innerText = '$' + item.productPrice;
+      itemPrice.innerText =item.productPrice;
   
   
       const itemSize = document.createElement('p');
@@ -131,7 +135,7 @@ function updateMiniCart() {
       itemDetails.appendChild(itemSize);
   
       cartItemDiv.appendChild(itemImage);
-      //cartItemDiv.appendChild(itemDetails);
+      cartItemDiv.appendChild(itemDetails);
       cartItemDiv.appendChild(itemQuantity);
   
       miniCart.appendChild(cartItemDiv);
@@ -152,10 +156,22 @@ function clearError() {
 
 // Function to toggle the visibility of the mini cart
 function toggleCart() {
-    const miniCart = document.getElementById('miniCart');
-    miniCart.style.display = miniCart.style.display === 'none' ? 'block' : 'none';
-    
+  const miniCart = document.getElementById('miniCart');
+  const cartCountElement = document.getElementById('cartCount');
+
+  if (miniCart.style.display === 'none') {
+    miniCart.style.display = 'block';
+    cartCountElement.style.backgroundColor = 'white';
+  } else {
+    miniCart.style.display = 'none';
+    cartCountElement.style.backgroundColor = 'transparent';
   }
+}
+
+
+
+
+
 
 // Function to update the cart count display
 function updateCartCount() {
